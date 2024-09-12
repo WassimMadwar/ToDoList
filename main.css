@@ -1,0 +1,123 @@
+body {
+    background-color: #eee;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    background-color: #ddd;
+    border-radius: 8px;
+    margin: 6px auto;
+    padding: 6px;
+    width: 150px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+ul li.active,ul li:hover {
+    opacity: 1;
+}
+
+ul li:first-child {
+    background-color: red;
+}
+
+ul li:nth-child(2) {
+    background-color: green;
+}
+
+ul li:nth-child(3) {
+    background-color: blue;
+}
+
+ul li:nth-child(4) {
+    background-color: black;
+}
+
+.container {
+    width: 900px;
+    margin: 20px auto;
+}
+
+.addForm {
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.input_Fild {
+    padding: 19px;
+    border: 3px solid #ddd;
+    border-radius: 6px;
+    overflow-wrap: break-word;
+    flex: 1;
+}
+
+.input_Fild:focus {
+    outline: none;
+}
+
+.btn_Add {
+    border: none;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.tasksList {
+    background-color: #eee;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.tasksList .task {
+    margin: 19px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.tasksList .task:not(:last-child) {
+    margin-bottom: 19px;
+}
+
+.tasksList .task:hover {
+    background-color: #f7f7f7;
+}
+
+.tasksList .task.done {
+    opacity: 0.5;
+}
+
+.tasksList .task span {
+    font-weight: bold;
+    font-size: 10px;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
